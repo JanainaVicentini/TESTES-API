@@ -1,0 +1,892 @@
+ID,Título do caso de teste,Etapas do teste,Dados do teste (corpo da solicitação),Resultado esperado,Resultado real,Status,Link para o relatório de bug
+Requisito 1: /api/v1/kits/:id/products,,,,,,,
+1,Adicionar produtos existentes a um kit,1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id=7
+{
+ ""productsList"": [
+         {
+              ""id"": 1,
+            ""quantity"":1
+         }
+  ]
+}
+ }",200 OK ,200 OK ,APROVADO,
+2,"Adicionar requisição Post para ""Atualizar"" a quantidade de um iten do KIT.",1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id=9
+""quantity atual é 1""
+ {
+    ""productsList"": [
+        {
+            ""id"": 1,
+            ""quantity"": 2
+        }
+    ]
+}",200 OK  ,200 OK ,APROVADO,
+3,Adicionar 29 produtos distintos a um kit.,1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id=9
+{
+    ""productsList"": [
+        {
+            ""id"": 1,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 2,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 3,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 4,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 5,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 6,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 7,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 8,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 9,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 10,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 11,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 12,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 13,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 14,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 15,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 16,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 17,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 18,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 19,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 20,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 21,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 22,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 23,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 24,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 25,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 26,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 27,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 28,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 29,
+            ""quantity"": 1
+        }
+    ]
+}","200 OK  ""quantity atualizado para """,200 OK ,APROVADO,
+4,Adicionar 30 produtos distintos a um kit.,1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id=9
+{
+    ""productsList"": [
+        {
+            ""id"": 1,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 2,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 3,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 4,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 5,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 6,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 7,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 8,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 9,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 10,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 11,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 12,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 13,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 14,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 15,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 16,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 17,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 18,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 19,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 20,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 21,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 22,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 23,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 24,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 25,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 26,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 27,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 28,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 29,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 30,
+            ""quantity"": 1
+        }
+    ]
+}","200 OK  ""quantity atualizado para 34""",200 OK ,APROVADO,
+5,Adicionar 31 produtos distintos a um kit.,1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id=9
+{
+    ""productsList"": [
+        {
+            ""id"": 1,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 2,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 3,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 4,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 5,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 6,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 7,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 8,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 9,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 10,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 11,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 12,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 13,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 14,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 15,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 16,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 17,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 18,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 19,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 20,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 21,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 22,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 23,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 24,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 25,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 26,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 27,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 28,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 29,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 30,
+            ""quantity"": 1
+        },
+        {
+            ""id"": 31,
+            ""quantity"": 1
+        }
+    ]",400 Bad Request,400 Bad Request,APROVADO,
+6,Adicionarrequisição Post com o parametro ID como String,1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id=7 
+""quantity atual é 1""
+ {
+    ""productsList"": [
+        {
+            ""id"": 1,
+            ""quantity"": 69
+        }
+    ]
+}",400 Bad Request,400 Bad Request,APROVADO,
+7,"Adicionar requisição Post com o parametro ID como String,com LETRAS LATINAS",1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id=7
+
+ {
+    ""productsList"": [
+        {
+            ""id"":""Abacaxi"" ,
+            ""quantity"": 1
+        }
+    ]
+}",400 Bad Request,500 Internal Server Error,Reprovado,https://janainamariavicentin.atlassian.net/browse/BUG-65
+8,"Adicionarrequisição Post  com o parametro ID como String, com caracteres especiais",1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id= 7
+{
+    ""productsList"": [
+        {
+            ""id"": ""@@@$%"",
+            ""quantity"": 1
+        }
+    ]
+}",400 Bad Request,500 Internal Server Error,Reprovado,https://janainamariavicentin.atlassian.net/browse/BUG-66
+9,"Adicionar requisição Post   com o parametro ID como String, com Números Negativos",1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id= 7
+{
+    ""productsList"": [
+        {
+            ""id"": -1,
+            ""quantity"": 2
+        }
+    ]
+}",400 Bad Request,200 OK,Reprovado,https://janainamariavicentin.atlassian.net/browse/BUG-68
+10,"Adicionar requisição Post   com o parametro ID como String, Sem passar o Parâmetro BODY ",1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id=7
+",400 Bad Request,200 OK,Reprovado,https://janainamariavicentin.atlassian.net/browse/BUG-71
+11,"Adicionar requisição Post  com o parametro ID como String, como o Campo Vazio",1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id=7
+
+ {
+    ""productsList"": [
+        {
+            ""id"": ""  '',
+            ""quantity"": 2
+        }
+    ]
+}",400 Bad Request,500 Internal Server Error,Reprovado,https://janainamariavicentin.atlassian.net/browse/BUG-69
+12,Adicionarrequisição Post com o parametro ID como String 0,1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id= 7
+{
+    ""productsList"": [
+        {
+            ""id"": 0,
+            ""quantity"": 2
+        }
+    ]
+}",400 Bad Request,200 OK,Reprovado,https://janainamariavicentin.atlassian.net/browse/BUG-70
+13,Adicionar requisição Post sem o parametro ID .,1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id= 7
+{
+    ""productsList"": [
+        {
+            ""quantity"": 2
+        }
+    ]
+}",400 Bad Request,200 OK,Reprovado,https://janainamariavicentin.atlassian.net/browse/BUG-71
+14,"Adicionar requisição Post sem o parametro ""productsList""  .",1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id= 7
+{
+   
+        
+            ""id"": -1,
+            ""quantity"": 2
+        }
+    
+",400 Bad Request,200 OK,Reprovado,https://janainamariavicentin.atlassian.net/browse/BUG-72
+15,"Adicionarrequisição Post com  ""productsList"" com objetos .",1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id= 7
+{
+    ""productsList"": {}
+}",400 Bad Request,500 Internal Server Error ,Reprovado,https://janainamariavicentin.atlassian.net/browse/BUG-73
+TESTES COM QUANTATY,,,,,,,
+1,"Adicionar requisição Post com o parametro Quantity como String, com números negativos.",1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id= 7
+{
+    ""productsList"": [
+        {
+            ""id"": 1,
+            ""quantity"": -1
+        }
+    ]
+}",400 Bad Request,200 OK,REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-67
+2,Adicionar requisição Post com o parametro Quantaty com LETRAS LATINAS,1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id= 7
+{
+    ""productsList"": [
+        {
+            ""id"": 1,
+            ""quantity"": ""Laranja""
+        }
+    ]
+}",400 Bad Request,500 Internal Server Error,REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-74
+3,Adicionar requisição Post com o parametro Quantity com Caracteres especiais.,1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id= 7
+{
+    ""productsList"": [
+        {
+            ""id"": 1,
+            ""quantity"": ""@#$""
+        }
+    ]
+}
+}",400 Bad Request,500 Internal Server Error,REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-75
+4,Adicionar requisição Post com o parametro Quantity com o campo vazio,1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id= 7
+{
+    ""productsList"": [
+        {
+            ""id"": 1,
+            ""quantity"": "" ""
+        }
+    ]
+}",400 Bad Request,200 OK,REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-76
+5,Adicionarrequisição Post com o parametro Quantity com o ZERO.,1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id= 7
+{
+    ""productsList"": [
+        {
+            ""id"": 1,
+            ""quantity"": 0
+        }
+    ]
+}",400 Bad Request,200 OK,REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-77
+TESTE DA URL,,,,,,,
+1,Adicionar requisição Post com a URL inexistente .,1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id= 7
+{
+    ""productsList"": [
+        {
+            ""id"": 1,
+            ""quantity"": 0
+        }
+    ]
+}","404
+Not Found","404
+Not Found",APROVADO,
+2,Adicionar requisição Post com a URL com letras latinas .,1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id= 7
+{
+    ""productsList"": [
+        {
+            ""id"": 1,
+            ""quantity"": 0
+        }
+    ]
+}","404
+Not Found",500 Internal Server Error,REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-78
+3,Adicionar requisição Post com a URL comcaracteres especias @#%$ .,1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id= 7
+{
+    ""productsList"": [
+        {
+            ""id"": 1,
+            ""quantity"": 0
+        }
+    ]
+}","405
+Method Not Allowed","405
+Method Not Allowed",APROVADO,
+4,Adicionar requisição Post com a URL campo {ID} vazio .,1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id= 7
+{
+    ""productsList"": [
+        {
+            ""id"": 1,
+            ""quantity"": 0
+        }
+    ]
+}","405
+Method Not Allowed","405
+Method Not Allowed",APROVADO,
+5,Adicionar requisição Post com a URL com número  .,1. Envie uma solicitação POST para /api/v1/kits/:id/products com um ID de kit existente na URL e um ID de produto no corpo da solicitação.,"Path params: id= 7
+{
+    ""productsList"": [
+        {
+            ""id"": 1,
+            ""quantity"": 0
+        }
+    ]
+}","404
+Not Found","404
+Not Found",APROVADO,
+Requisito 2-POST /order-and-go/v1/delivery ,,,,,,,
+Testes para''deliveryTime'',,,,,,,
+1,"Adicionar uma requisição POST com os seguintes, para validar ""hostDeliveryCost "": 3,deliveryTime 8",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 1,
+    ""productsWeight"": 2
+}","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0",APROVADO,
+2,"Adicionar uma requisição POST com os seguintes, para validar ""hostDeliveryCost "": ,deliveryTime 7,",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 7,
+    ""productsCount"": 9,
+    ""productsWeight"": 3.1
+}","200 OK  ""isItPossibleToDeliver"": talse,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0","""200 OK  """"isItPossibleToDeliver"""": true,
+    """"hostDeliveryCost"""": 5,  """"clientDeliveryCost"""": 5""",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-79
+3,"Adicionar uma requisição POST com os seguintes, para validar ""hostDeliveryCost "": deliveryTime 9,",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 9,
+    ""productsCount"": 1,
+    ""productsWeight"": 2
+}","200 OK  ""isItPossibleToDeliver"": true
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0","200 OK  ""isItPossibleToDeliver"": true
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0",APROVADO,
+4,"Adicionar uma requisição POST com os seguintes, para validar ""hostDeliveryCost "": deliveryTime 21,",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 21,
+    ""productsCount"": 1,
+    ""productsWeight"": 2
+}","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0",APROVADO,
+5,"Adicionaruma requisição POST com os seguintes, para validar ""hostDeliveryCost "":deliveryTime  22,",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 22,
+    ""productsCount"": 1,
+    ""productsWeight"": 2
+}","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0",APROVADO,
+6,"Adicionar uma requisição POST com os seguintes, para validar ""hostDeliveryCost "":deliveryTime  23,",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 23,
+    ""productsCount"": 1,
+    ""productsWeight"": 2
+}","200 OK  ""isItPossibleToDeliver"":TALSE,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 5",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-80
+7,Adicionar uma requisição POST sem o deliveryTime,1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""productsCount"": 1,
+    ""productsWeight"": 2.9
+}",400 Bad Request,"200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-86
+8,"Adicionar uma requisição POST ,com String no deliveryTime",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": ""  "",
+    ""productsCount"": 10,
+    ""productsWeight"": 11
+}","200 OK  ""isItPossibleToDeliver"":TALSE,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 5",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-89
+9,Adicionar uma requisição POSTcom caracteres especias @$%^& no deliveryTime,1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": ""@$%^& "",
+    ""productsCount"": 3,
+    ""productsWeight"": 6
+}","200 OK  ""isItPossibleToDeliver"":TALSE,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-92
+10,Adicionaruma requisição POST com letras latinas no deliveryTime,1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": "" Laranja"",
+    ""productsCount"": 3,
+    ""productsWeight"": 6
+}","200 OK  ""isItPossibleToDeliver"":TALSE,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-95
+11,Adicionar uma requisição POST com campo vazio em deliveryTime,1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": "" "",
+    ""productsCount"": 1,
+    ""productsWeight"": 6
+}",400 Bad Request,"200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-100
+12,"Adicionar uma requisição POST , produtos por pedido 9.''deliveryTime",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 9,
+    ""productsWeight"": 3.1
+}","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0","""200 OK  """"isItPossibleToDeliver"""": true,
+    """"hostDeliveryCost"""": 5,  """"clientDeliveryCost"""": 0""",APROVADO,
+Testes para''productsCount'',,,,,,,
+1,"Adicionaruma requisição POST productsCount -1,",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": ""-1"",
+    ""productsWeight"": 2
+}","200 OK  ""isItPossibleToDeliver"":TALSE,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 5",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-81
+2,Adicionar uma requisição POST productsCount 0.,1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 0,
+    ""productsWeight"": 1
+}",400 Bad Request,"""200 OK  """"isItPossibleToDeliver"""": true,
+    """"hostDeliveryCost"""": 3,  """"clientDeliveryCost"""": 0""",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-82
+3,Adicionar uma requisição POST productsCount 1,1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 1,
+    ""productsWeight"": 2
+}","200 OK  ""isItPossibleToDeliver"":TALSE,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-83
+4,"Adicionar uma requisição POST ,sem o productsCount",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsWeight"": 3.1
+}",400 Bad Request,"200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-86
+5,Adicionar uma requisição POST:Com String no productsCount,1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": ""  "",
+    ""productsWeight"": 11
+}","200 OK  ""isItPossibleToDeliver"":TALSE,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 5",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-90
+6,Adicionar uma requisição POST:com caracteres especias @$%^& no productsCount,1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": ""@$%^& "",
+    ""productsWeight"": 6
+}","200 OK  ""isItPossibleToDeliver"":TALSE,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-93
+7,Adicionar uma requisição POST:com letras latinas no productsCount,1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": "" Laranja"",
+    ""productsWeight"": 6
+}","200 OK  ""isItPossibleToDeliver"":TALSE,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-96
+8,Adicionar uma requisição POST: com campo vazio em productsCount,1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": "" "",
+    ""productsWeight"": 6
+}",400 Bad Request,"200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-101
+9,Adicionar uma requisição POST no productsCount 10.,1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 10,
+    ""productsWeight"": 6
+}","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0","""200 OK  """"isItPossibleToDeliver"""": true,
+    """"hostDeliveryCost"""": 5,  """"clientDeliveryCost"""": 0""",APROVADO,
+10,Adicionaruma requisição POST no productsCount 11.,1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 11,
+    ""productsWeight"": 6
+}","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0","""200 OK  """"isItPossibleToDeliver"""": true,
+    """"hostDeliveryCost"""": 5,  """"clientDeliveryCost"""": 0""",APROVADO,
+11,Adicionar uma requisição POST no productsCount 14.,1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 14,
+    ""productsWeight"": 6
+}","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0","""200 OK  """"isItPossibleToDeliver"""": true,
+    """"hostDeliveryCost"""": 5,  """"clientDeliveryCost"""": 0""",APROVADO,
+12,Adicionar uma requisição POST no productsCount 15.,1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 15,
+    ""productsWeight"": 6
+}","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0","""200 OK  """"isItPossibleToDeliver"""": true,
+    """"hostDeliveryCost"""": 5,  """"clientDeliveryCost"""": 0""",APROVADO,
+13,"Adicionar uma requisição POST no productsCount,16.",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 16,
+    ""productsWeight"": 6
+}","200 OK  ""isItPossibleToDeliver"": talse
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0","""200 OK  """"isItPossibleToDeliver"""": true,
+    """"hostDeliveryCost"""": 5,  """"clientDeliveryCost"""": 5""",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-98
+14,Adicionaruma requisição POST productsCount 11.,1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 11,
+    ""productsWeight"": 6
+}","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0","""200 OK  """"isItPossibleToDeliver"""": true,
+    """"hostDeliveryCost"""": 5,  """"clientDeliveryCost"""": 0""",APROVADO,
+15,Adicionar uma requisição POST  productsCount 14.,1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 14,
+    ""productsWeight"": 6
+}","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0","""200 OK  """"isItPossibleToDeliver"""": true,
+    """"hostDeliveryCost"""": 5,  """"clientDeliveryCost"""": 0""",APROVADO,
+16,"Adicionar uma requisição POST ,com productsCount 15.",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 15,
+    ""productsWeight"": 6
+}","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0","""200 OK  """"isItPossibleToDeliver"""": true,
+    """"hostDeliveryCost"""": 5,  """"clientDeliveryCost"""": 0""",APROVADO,
+17,Adicionar uma requisição POST com productsCount 16.,1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 16,
+    ""productsWeight"": 6
+}","200 OK  ""isItPossibleToDeliver"": talse
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0","""200 OK  """"isItPossibleToDeliver"""": true,
+    """"hostDeliveryCost"""": 5,  """"clientDeliveryCost"""": 5""",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-98
+Testes para''productsWeight'',,,,,,,
+1,"Adicionar uma requisição POST,  productsWeight -1.",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 1,
+    ""productsWeight"": ""-1""
+}","200 OK  ""isItPossibleToDeliver"":TALSE,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-84
+2,"Adicionar uma requisição POST,  productsWeight 0.",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 1,
+    ""productsWeight"": 0
+}",400 Bad Request,"""200 OK  """"isItPossibleToDeliver"""": true,
+    """"hostDeliveryCost"""": 3,  """"clientDeliveryCost"""": 0""",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-85
+3,"Adicionar uma requisição POST,  productsWeight 1 .",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 1,
+    ""productsWeight"": 1
+}","200 OK  ""isItPossibleToDeliver"":true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0",APROVADO,
+4,"Adicionaruma requisição POST,  productsWeight 2.9.",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 1,
+    ""productsWeight"": 2.9
+}","200 OK  ""isItPossibleToDeliver"":true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0",APROVADO,
+5,"Adicionar uma requisição POST,  productsWeight 3 .",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 1,
+    ""productsWeight"": 3
+}","200 OK  ""isItPossibleToDeliver"":true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0",APROVADO,
+6,"Adicionar uma requisição POST ,sem o productsWeight",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 9
+}",400 Bad Request,"200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-87
+7,"Adicionar uma requisição POST ,sem o BODY",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,,400 Bad Request,,REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-88
+8,Adicionar uma requisição POST com String no productsWeight,1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 3,
+    ""productsWeight"": ""  ""
+}","200 OK  ""isItPossibleToDeliver"":TALSE,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 5",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-91
+9,Adicionar uma requisição POST com caracteres especias @$%^& no productsWeight,1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 3,
+    ""productsWeight"": ""@$%^& ""
+}","200 OK  ""isItPossibleToDeliver"":TALSE,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-94
+10,Adicionar uma requisição POST com letras latinas no productsWeight,1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 1,
+    ""productsWeight"": "" Laranja""
+}","200 OK  ""isItPossibleToDeliver"":TALSE,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-97
+12,Adicionar uma requisição POST  com campo vazio em productsWeight,1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 3,
+    ""productsWeight"": "" ""
+}",400 Bad Request,"200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3, ""clientDeliveryCost"": 0",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-102
+13,"Adicionar uma requisição POST  com campo vazio em productsWeight, productsCount , deliveryTime",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": "" "",
+    ""productsCount"": "" "",
+    ""productsWeight"": "" ""
+}",400 Bad Request,"200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-103
+14,"Adicionar uma requisição POST,para validar productsWeight 3.1.",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 15,
+    ""productsWeight"": 3.1
+}","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0","""200 OK  """"isItPossibleToDeliver"""": true,
+    """"hostDeliveryCost"""": 5,  """"clientDeliveryCost"""": 0""",APROVADO,
+15,"Adicionar uma requisição POST ,productsWeight 3.2.",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 15,
+    ""productsWeight"": 3.2
+}","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0","""200 OK  """"isItPossibleToDeliver"""": true,
+    """"hostDeliveryCost"""": 5,  """"clientDeliveryCost"""": 0""",APROVADO,
+16,"Adicionar uma requisição POST ,productsWeight 5.9.",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 15,
+    ""productsWeight"": 5.9
+}","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0","""200 OK  """"isItPossibleToDeliver"""": true,
+    """"hostDeliveryCost"""": 5,  """"clientDeliveryCost"""": 0""",APROVADO,
+17,"Adicionar uma requisição POST, productsWeight 6.",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 15,
+    ""productsWeight"": 6
+}","200 OK  ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0","""200 OK  """"isItPossibleToDeliver"""": true,
+    """"hostDeliveryCost"""": 5,  """"clientDeliveryCost"""": 0""",APROVADO,
+18,"Adicionar uma requisição POST , productsWeight 6.1.",1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 15,
+    ""productsWeight"": 6
+}","200 OK  ""isItPossibleToDeliver"": talse,
+    ""hostDeliveryCost"": 5, ""clientDeliveryCost"": 0","""200 OK  """"isItPossibleToDeliver"""": true,
+    """"hostDeliveryCost"""": 5,  """"clientDeliveryCost"""": 0""",APROVADO,
+19,Adicionar uma requisição POST  com 0 no productsCount e no productsWeight 0.,1. Envie uma solicitação POST para  /order-and-go/v1/delivery.,"{
+    ""deliveryTime"": 8,
+    ""productsCount"": 0,
+    ""productsWeight"": 0
+}",400 Bad Request,"""200 OK  """"isItPossibleToDeliver"""": true,
+    """"hostDeliveryCost"""": 3,  """"clientDeliveryCost"""": 0""",REPROVADO,https://janainamariavicentin.atlassian.net/browse/BUG-99
